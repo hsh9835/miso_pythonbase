@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.templating import Jinja2Templates
 
 from app.plugins.router_autoset import *
 
 app = FastAPI()
+templates = Jinja2Templates(directory="templates")
 
 # CORS 설정 추가
 app.add_middleware(

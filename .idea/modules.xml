@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/backend/djangobase/djangobase.iml" filepath="$PROJECT_DIR$/app/backend/djangobase/djangobase.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/backend/fastapibase/fastapibase.iml" filepath="$PROJECT_DIR$/app/backend/fastapibase/fastapibase.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/backend/flaskbase/flaskbase.iml" filepath="$PROJECT_DIR$/app/backend/flaskbase/flaskbase.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/miso_pythonbase.iml" filepath="$PROJECT_DIR$/.idea/miso_pythonbase.iml" />
