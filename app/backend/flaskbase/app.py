@@ -18,12 +18,12 @@ register_blueprints(app)
 @app.route('/', methods=['POST'])
 def postReq():
     # POST 요청을 처리하는 코드
-    return 'POST 요청이 성공적으로 처리되었습니다.'
+    return '지금은 git branch 테스트중입니다.'
 
 
 @app.route('/axiosTest', methods=['POST'])
 def axiosTest():
-    return 'axios 작동 잘 되고 있습니다.'
+    return '비동기 통신 잘 작동되고 잘 작동되는거 같습니다.'
 
 
 if __name__ == '__main__':
