@@ -18,7 +18,7 @@ register_blueprints(app)
 @app.route('/', methods=['POST'])
 def postReq():
     # POST 요청을 처리하는 코드
-    return 'POST 요청이 성공적으로 처리되었습니다.'
+    return '지금은 git branch 테스트중입니다.'
 
 
 @app.route('/axiosTest', methods=['POST'])
