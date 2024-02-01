@@ -1,19 +1,23 @@
 from fastapi import APIRouter
-from fastapi.responses import JSONResponse
+from pydantic.main import BaseModel
 
 from app.api.spacy.english import *
 
-router = APIRouter() # /spacy
+# /spacy
+router = APIRouter()
+
+class Data(BaseModel):
+    name: str
 
 
-@router.get('/test')
+@router.post('/test')
 def test():
-    return {"message": "Success good job SeHwa."}
+    return {"message": "Welcome to miso."}
 
 @router.post('/test2')
-def test2():
-    print("test2")
-    return JSONResponse(content={"message": "Success good job SeHwa."})
+def test2(data: Data):
+    print(data)
+    return "Success good job SeHwa."
 
 
 @router.post('/NASAmeme')
