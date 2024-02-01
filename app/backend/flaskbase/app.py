@@ -23,7 +23,7 @@ def postReq():
 
 @app.route('/axiosTest', methods=['POST'])
 def axiosTest():
-    return '비동기 통신 잘 작동되고 있습니다.'
+    return '비동기 통신 잘 작동되고 잘 작동되는거 같습니다.'
 
 
 if __name__ == '__main__':
